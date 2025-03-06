@@ -3,4 +3,5 @@
 <p>Color : {{color}}</p>
 <p>Discount Price : {{getDetails()}}</p>
 <p>{{stock < 0 ? "only 0" : stock + "left"}}</p>
-<input type="text" [value]="name">
+<input [value]="name" (input)="onNameChange()">
+<p>Name = {{name}}</p>  

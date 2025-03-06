@@ -13,4 +13,9 @@ export class ProductListComponent {
       getDetails() {
         return this.price * this.price
       }
+
+      onNameChange(){
+        this.name = "Mark"
+      }
+
 }
