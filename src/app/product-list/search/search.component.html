@@ -1,0 +1,8 @@
+<div class="search-container">
+    <!-- <input type="text" class="search-input" placeholder="Search..."  [value]="searchText" (input)="updateSearch($event)" >  -->
+    <input type="text" class="search-input" placeholder="Search..."  [(ngModel)]="searchText" > 
+    <button class="search-button">Search</button>
+</div>
+<div class="result-container">
+    <p class="result-title">Result:{{searchText}}</p>
+</div> 
